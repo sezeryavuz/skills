@@ -15,7 +15,6 @@
     "link-skills": "bash scripts/link-skills.sh"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.7.0",
     "@changesets/cli": "^2.30.0"
   },
   "overrides": {
