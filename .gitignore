@@ -1,0 +1,6 @@
+node_modules
+.DS_Store
+
+# Claude Code per-user local settings (permissions etc.) — not shared.
+# A shared .claude/settings.json, if you add one, is NOT ignored and can be committed.
+.claude/settings.local.json

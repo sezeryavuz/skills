@@ -1,0 +1,6 @@
+{
+  "name": "sezeryavuz-skills",
+  "skills": [
+    "./skills/engineering/prompt-to-production"
+  ]
+}

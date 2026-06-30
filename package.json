@@ -1,0 +1,22 @@
+{
+  "name": "sezeryavuz-skills",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Sezer Yavuz's agent skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sezeryavuz/skills"
+  },
+  "license": "MIT",
+  "scripts": {
+    "changeset": "changeset",
+    "version": "changeset version",
+    "list-skills": "bash scripts/list-skills.sh",
+    "link-skills": "bash scripts/link-skills.sh"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.7.0",
+    "@changesets/cli": "^2.30.0"
+  },
+  "packageManager": "npm@10.9.4"
+}
