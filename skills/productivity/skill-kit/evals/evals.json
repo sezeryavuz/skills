@@ -1,0 +1,29 @@
+{
+  "skill_name": "skill-kit",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "i'm in the root of my next.js shop (app router, tailwind, stripe checkout already wired up). can you figure out what agent skills this repo is missing and set them up for me? i haven't added any analytics or tests yet i think",
+      "expected_output": "Asks the Phase 0 interaction-mode question first, scans the repo into a profile (next.js + tailwind + stripe, e-commerce), surfaces gaps (analytics, tests, CI, error monitoring), derives find-skills queries, scores candidates, and returns a de-duplicated kit with a per-skill rationale plus the ordered install commands.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "hey i'm not really a coder — i just have a folder on my desktop with a bunch of quarterly budget spreadsheets and a couple of csvs. is there anything that would help me work with these better? can you set it up?",
+      "expected_output": "Recognizes a non-code folder (spreadsheets/accounting), does NOT recommend developer hygiene skills like eslint/CI, instead suggests document/spreadsheet/data-analysis skills, and offers to install or print commands. Keeps the questioning light and jargon-free.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "python data pipeline here (pandas + numpy, a few scripts under src/). no tests, no CI, no linting. what skills should I add — just give me the combination, don't ask me a million questions",
+      "expected_output": "Honors a low question budget (few or no questions), scans to python/data, identifies the no-tests/no-CI/no-lint gaps, assembles a focused kit with rationales tied to those findings, and lists install commands. Does not over-interrogate.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "analyze this project and recommend the right skill combination for it, but ask me before installing anything and only bug me about stuff that actually changes what you'd pick",
+      "expected_output": "Sets interaction mode to 'only critical', asks only questions that would change the recommended set (respecting the critical threshold and the three escape hatches), presents the assembled kit as a verdict, and gets one batch confirmation before installing.",
+      "files": []
+    }
+  ]
+}

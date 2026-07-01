@@ -1,3 +1,18 @@
+```
+╔════════════════════════════════════════════════════════╗
+║                                                        ║
+║   ██████  ██  ██  ██████  ██      ██      ██████       ║
+║   ██      ██ ██     ██    ██      ██      ██           ║
+║   ██████  ████      ██    ██      ██      ██████       ║
+║       ██  ██ ██     ██    ██      ██          ██       ║
+║   ██████  ██  ██  ██████  ██████  ██████  ██████       ║
+║                                                        ║
+║   Agent skills — small · composable · model-agnostic   ║
+║   by Sezer Yavuz   ·   skills.sh/sezeryavuz/skills     ║
+║                                                        ║
+╚════════════════════════════════════════════════════════╝
+```
+
 # Sezer Yavuz's Skills
 
 [![skills.sh](https://skills.sh/b/sezeryavuz/skills)](https://skills.sh/sezeryavuz/skills)
@@ -26,7 +41,11 @@ Skills for code work.
 
 ### Productivity
 
-_No skills yet._
+General workflow tools, not code-specific.
+
+**Model-invoked**
+
+- **[skill-kit](./skills/productivity/skill-kit/SKILL.md)** — Analyze a project or folder and assemble, then install, a tailored de-duplicated kit of agent skills matched to its stack, domain, and capability gaps. Works for repos and plain folders of files.
 
 ### Misc
 
