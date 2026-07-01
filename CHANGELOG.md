@@ -1,5 +1,11 @@
 # sezeryavuz-skills
 
+## 0.2.1
+
+### Patch Changes
+
+- 23d5fc1: `skill-kit`: document installation in its README — add an **Install** section with the `skills` CLI commands, including the `sezeryavuz/skills@skill-kit` by-name form (resolves by `SKILL.md` `name`, so it survives the skill moving folders), the whole-collection form, and the `-g`/`-y` flags.
+
 ## 0.2.0
 
 ### Minor Changes
