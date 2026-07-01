@@ -2,6 +2,23 @@
 
 > `skill-kit` — Analyze a project or folder and assemble, then install, a tailored de-duplicated kit of agent skills matched to its stack, domain, and capability gaps.
 
+## Install
+
+Install it into your agent with the [`skills`](https://skills.sh) CLI:
+
+```bash
+# just this skill, by name — recommended (resolves by SKILL.md `name`, so it
+# survives the skill being moved to another folder in the repo)
+npx skills@latest add sezeryavuz/skills@skill-kit
+
+# ...or grab the whole collection and pick from the list
+npx skills@latest add sezeryavuz/skills
+```
+
+Add **`-g`** to install globally (user-level, available in every project) instead of into the
+current folder, and **`-y`** to skip the per-skill confirmation. The explicit in-repo path works
+too if you prefer it: `sezeryavuz/skills/skills/productivity/skill-kit`.
+
 ## How to run it
 
 `skill-kit` is **model-invoked** — so there are two ways to run it. Pick whichever is faster:
