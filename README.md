@@ -47,6 +47,15 @@ General workflow tools, not code-specific.
 
 - **[skill-kit](./skills/productivity/skill-kit/SKILL.md)** — Analyze a project or folder and assemble, then install, a tailored de-duplicated kit of agent skills matched to its stack, domain, and capability gaps. Works for repos and plain folders of files.
 
+### Startup
+
+Company-building work: evidence, positioning, and entity knowledge.
+
+**Model-invoked**
+
+- **[founder-reflection-loop](./skills/startup/founder-reflection-loop/SKILL.md)** — Founder-side startup reflection: separates what a startup can evidence from what it merely asserts, repairs the founder-facing artifact honestly, and uses the `office-hours` skill as an independent diagnostic pass.
+- **[refine-entity-pages](./skills/startup/refine-entity-pages/SKILL.md)** — Audit, repair, and verify GBrain person and company entity pages against the enrichment quality bar, then drive the official `enrich` skill and check what it actually wrote.
+
 ### Misc
 
 _No skills yet._
@@ -57,6 +66,7 @@ _No skills yet._
 skills/
 ├── engineering/   (promoted — listed here + in plugin.json)
 ├── productivity/  (promoted)
+├── startup/       (promoted)
 ├── misc/          (promoted)
 ├── personal/      (hidden)
 ├── in-progress/   (hidden)

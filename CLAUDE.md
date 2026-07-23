@@ -8,12 +8,13 @@ Skills live at `skills/<bucket>/<skill-name>/SKILL.md`. Buckets:
 
 - `engineering/` — daily code work
 - `productivity/` — daily non-code workflow tools
+- `startup/` — company-building work: evidence, positioning, entity knowledge
 - `misc/` — kept around but rarely used
 - `personal/` — tied to my own setup, not promoted
 - `in-progress/` — drafts not yet ready to ship
 - `deprecated/` — no longer used
 
-`engineering/`, `productivity/`, and `misc/` are **promoted**; `personal/`, `in-progress/`, and `deprecated/` are **hidden**.
+`engineering/`, `productivity/`, `startup/`, and `misc/` are **promoted**; `personal/`, `in-progress/`, and `deprecated/` are **hidden**.
 
 ## The promotion contract
 

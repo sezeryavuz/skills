@@ -2,6 +2,8 @@
   "name": "sezeryavuz-skills",
   "skills": [
     "./skills/engineering/prompt-to-production",
-    "./skills/productivity/skill-kit"
+    "./skills/productivity/skill-kit",
+    "./skills/startup/founder-reflection-loop",
+    "./skills/startup/refine-entity-pages"
   ]
 }
