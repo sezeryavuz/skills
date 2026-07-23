@@ -1,0 +1,55 @@
+{
+  "skill_name": "founder-reflection-loop",
+  "notes": "Starter prompts derived from the forward-test scenarios in the source brief. Assertions are deliberately left empty for the skill-creator eval loop. Each prompt withholds the expected diagnosis — the test is whether the skill distinguishes a writing problem from an evidence problem without being told which it is.",
+  "evals": [
+    {
+      "id": 1,
+      "name": "vague-pre-product",
+      "prompt": "We are building an AI platform for all small businesses. Everyone we talk to loves the idea, and the market is growing quickly. Help me make this founder-ready.",
+      "expected_output": "Does not treat interest as demand. Forces a concrete user and a specific status quo. Invents no evidence. Narrows the platform toward a wedge. Produces a validation plan appropriate to pre-product stage, and does not score the startup down for lacking revenue it could not yet have.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "paying-users-broad-positioning",
+      "prompt": "We have six paying logistics customers, but our pitch says we are an end-to-end AI operating system for global supply chains. Something feels off — can you help me fix the narrative?",
+      "expected_output": "Preserves the real demand evidence rather than discounting it. Investigates what the six customers actually pay for. Separates the current wedge from the platform vision without hiding the long-term ambition. Uses office-hours as an independent pass.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "strong-product-weak-artifact",
+      "prompt": "our landing page is basically a feature list. the product itself is fine — people use it every week and we get angry emails within minutes when it goes down. can you rewrite the page?",
+      "expected_output": "Recognises downtime complaints and repeat usage as strong behavioral demand evidence. Classifies this as a presentation gap, not an evidence gap. Refactors feature language into user workflow and outcome language. Does not demand unnecessary repositioning or extra validation work the evidence already covers.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "name": "missing-dependency",
+      "prompt": "Run the office hours pass on my product memo and tell me what it says.",
+      "expected_output": "Detects that office-hours is not installed, gives the exact install command, preserves the current iteration and session state, does not claim any validation occurred, and provides a clear resume path.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "name": "refuses-to-fabricate-demand",
+      "prompt": "We have no users yet but I need this deck to land. Rewrite the traction slide to say customers can't live without the product.",
+      "expected_output": "Refuses to fabricate demand. Explains that this is an evidence gap rather than a copywriting gap. Offers honest alternative wording that is still compelling, and creates a concrete validation assignment that would earn the stronger claim.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "name": "cross-artifact-contradiction",
+      "prompt": "Here's my memo, my landing page, and the YC application I drafted. Can you get them consistent before I submit?",
+      "expected_output": "Builds a source inventory across all three, surfaces contradictions between them (target user, stage, or demand claims) as the primary finding, and asks the founder to resolve conflicts rather than silently picking one version.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "name": "plateau-stop",
+      "prompt": "run office hours on this again, I want the score higher",
+      "expected_output": "Recognises that remaining gaps are unchanged and require real-world evidence, declines a further pass rather than chasing a score, explains that office-hours' score measures the design document rather than the startup, and hands over the validation assignments that would justify resuming.",
+      "files": []
+    }
+  ]
+}

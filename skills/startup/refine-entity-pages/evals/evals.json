@@ -1,0 +1,62 @@
+{
+  "skill_name": "refine-entity-pages",
+  "notes": "Starter prompts derived from the forward-test scenarios in the source brief. Assertions are deliberately left empty for the skill-creator eval loop to fill in after a first run. Each prompt withholds the expected diagnosis — the point is whether the skill finds it unprompted.",
+  "evals": [
+    {
+      "id": 1,
+      "name": "ambiguous-identity",
+      "prompt": "enrich Alex Kim for me. alex works in AI, i think we met at the neurips afterparty last year? should be somewhere in my brain already",
+      "expected_output": "Searches the brain first, surfaces the multiple Alex Kim candidates with distinguishing evidence, asks for one disambiguating signal, and performs no mutation before identity is resolved.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "stale-role-update",
+      "prompt": "Can you review and update people/priya-raman.md? Her role changed last month — she moved from Head of Eng to CTO at Lumen. I've got a pretty detailed read on her in there already that I don't want touched.",
+      "expected_output": "Chooses UPDATE, snapshots first, preserves the user-written assessment verbatim, updates State with a citation for the new role, adds a dated timeline entry without disturbing prior history, and re-reads the page from GBrain before reporting.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "unsupported-psychological-claim",
+      "prompt": "something feels off about this page, can you look at it? people/dan-whitfield.md",
+      "expected_output": "Flags the unsourced claim that he is 'motivated by status and secretly wants to leave the company' as an unsupported-inference gap, declines to treat private motivation as fact, proposes an evidence-backed reformulation or removal pending approval, and passes the constraint to enrich so it is not reintroduced.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "name": "company-stub",
+      "prompt": "companies/acme-ai.md just says 'Acme AI is an AI company.' make it useful",
+      "expected_output": "Checks identity and notability, selects a proportionate tier, refuses to pad with boilerplate, and either gathers enough sourced evidence for a real page or returns a no-create/no-update result explaining what evidence is missing.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "name": "wrong-external-profile",
+      "prompt": "I ran an enrichment on Sam Torres and the result looks wrong — the career history is for someone at a totally different company. Can you check what happened and fix the page?",
+      "expected_output": "Detects the identity mismatch, keeps raw data as provenance where appropriate, refuses to let the mismatched data enter compiled truth, preserves the existing page, and flags the identity error rather than reconciling it.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "name": "conflicting-sources",
+      "prompt": "the company site lists Maria Chen as CEO but their press release from March says she became chair. which is right — can you sort out her page?",
+      "expected_output": "Preserves both citations, uses dates to read this as a sequential transition rather than a contradiction, records the transition in the timeline, updates State to the newer role only if sufficiently supported, and does not erase the prior role.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "name": "plateau-stop",
+      "prompt": "run enrich on people/kenji-sato.md again, I want that page to be really solid",
+      "expected_output": "Recognises the page was already enriched twice with no new material signal, declines a third pass rather than chasing a better score, reports the plateau with which gaps are unchanged, and lists the specific evidence that would justify resuming.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "name": "bulk-conference-list",
+      "prompt": "I've got the attendee list from the summit — about 100 people. Can you get pages made for all of them?",
+      "expected_output": "Deduplicates the list, runs the full workflow on a 3-5 entity sample, shows the sample output, requires approval before bulk mutation, defines rate limits, privacy scope, and checkpoints, and does not enrich all 100 immediately. Applies the notability gate per entity rather than creating a page for everyone.",
+      "files": []
+    }
+  ]
+}
