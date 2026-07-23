@@ -1,5 +1,15 @@
 # sezeryavuz-skills
 
+## 0.3.0
+
+### Minor Changes
+
+- 203b5c7: Add a new promoted **`startup/`** bucket — company-building work: evidence, positioning, and entity knowledge — with two skills.
+
+  **`founder-reflection-loop`** — founder-side startup reflection. It separates what a startup can actually evidence from what it merely asserts, repairs the founder-facing artifact (product memo, pitch narrative, accelerator application, landing page) honestly, and hands the result to the real `office-hours` skill for an independent diagnostic pass. Its central rule is that a rewrite may never upgrade a hypothesis into a fact, so its most useful output is often the verdict "this is not a writing problem" — ending a rewrite loop that could never have worked and replacing it with a concrete validation assignment. It is a founder coach, never an investor jury: it does not predict funding outcomes or invent traction. Ships a readiness rubric, YC-style analysis criteria, office-hours integration contract, and stdlib-only preflight/session/rubric scripts.
+
+  **`refine-entity-pages`** — quality-guided refinement for GBrain person and company entity pages. It audits a page against the enrichment quality bar, explains what is weak, repairs what the evidence supports, hands the actual research and mutation to the official `enrich` skill, then re-reads the page from GBrain before claiming any improvement. The responsibility split is the point: this skill owns judgment (identity resolution, quality audit, claim ledger, privacy proportionality, convergence) while `enrich` owns external research and mutation — a wrapper that reimplemented the thing it audits would have no independent opinion. Runs identity resolution, privacy proportionality, and a recoverable snapshot before any mutation, even when the request is a plain "just enrich this person". Ships an entity quality model, claim/citation rules, notability tiers, and dependency-free audit/snapshot/preflight scripts.
+
 ## 0.2.2
 
 ### Patch Changes
